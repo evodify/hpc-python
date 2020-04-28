@@ -5,6 +5,7 @@ Download (clone) the exercise material with
 ```bash
 $ git clone https://github.com/csc-training/hpc-python.git
 ```
+
 The external Python packages can be installed with **pip** by using the provided 
 [requirements.txt](requirements.txt) file. In CSC classroom this can be done 
 (aftter cloning the material) as
@@ -12,6 +13,14 @@ The external Python packages can be installed with **pip** by using the provided
 ```bash
 $ cd hpc-python
 $ pip3.4 install -r requirements.txt --user
+```
+
+If you use [Conda environments](https://conda.io), you can install and load the
+required packages with
+
+```
+conda env create -f conda.yml
+conda activate hpc-python
 ```
 
 You can test that all packages are available by
