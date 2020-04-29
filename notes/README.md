@@ -49,19 +49,19 @@ python3 -m timeit -n 10000000 -s "from math import sin" "sin(0.2)"
 The `timeit` module can be used also directly inside scripts, see
 [Documentation of timeit](https://docs.python.org/3/library/timeit.html).
 
-## cProfile
+### cProfile
 
-cProfile gather statistics that describes how often and for how long various
+*cProfile* gather statistics that describes how often and for how long various
 parts of the program executed.
 
-Run the test with cProfile.
+Run the test with *cProfile*:
 
 ```
 cd performance/cprofile
 python -m cProfile -o profile.dat heat_main.py
 ```
 
-Explore the collected cProfile stats:
+Explore the collected *cProfile* stats:
 
 ```
 python -m pstats profile.dat
