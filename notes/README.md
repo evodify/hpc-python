@@ -18,12 +18,13 @@ python notes/process_time_context.py
 
 ### Timeit Small bits code
 
-To measuring reliably very short execution times (statement or a function call)
-one needs to gather some statistics for error estimates. It can be done with `timeit`.
+To measure reliably very short execution times (statement or a function call)
+one needs to gather some statistics for **error estimates**. It can be done with `timeit`.
 
 The module can be used from the command line, within a program, or within an interactive interpreter (e.g. IPython).
 
-When a code snippet is measured with `timeit`, the module takes care of running the snippet several times and calculating statistics.
+When a code snippet is measured with `timeit`, the module takes care of running
+the snippet several times and calculating statistics.
 
 **IPython**:
 
@@ -51,8 +52,8 @@ The `timeit` module can be used also directly inside scripts, see
 
 ### cProfile
 
-*cProfile* gather statistics that describes how often and for how long various
-parts of the program executed.
+*cProfile* gather statistics that describes how often and for how long 
+**various parts of the program** are executed.
 
 Run the test with *cProfile*:
 
